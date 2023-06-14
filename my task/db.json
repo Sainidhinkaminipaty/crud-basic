@@ -1,0 +1,35 @@
+{ "Users":[
+    {
+        "id":1,
+        "firstname": "ramanji",
+        "lastname": "karela",
+        "email": "ramanjikarela@gmail.com",
+        "address": "hyderabad",
+        "phoneno": "9985036916"
+    },
+    {   
+        "id":2,
+        "firstname": "ravi",
+        "lastname": "kammu",
+        "email": "ravikammu@gmail.com",
+        "address": "warangal",
+        "phoneno": "9985036865"
+    },
+    {   
+        "id":3,
+        "firstname": "ramraju",
+        "lastname": "kammu",
+        "email": "ramarajukammu@gmail.com",
+        "address": "guntur",
+        "phoneno": "9985034865"
+    },
+    {   
+        "id":4,
+        "firstname": "ganesh",
+        "lastname": "relangi",
+        "email": "ganeshrelangi@gmail.com",
+        "address": "vizag",
+        "phoneno": "9985034876"
+    }
+]
+}

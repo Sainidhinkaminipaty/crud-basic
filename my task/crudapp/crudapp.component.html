@@ -1,0 +1,58 @@
+<div fxLayout="row" fxLayoutGap="12px">
+    <div fxFlex="50">
+        <form action="" [formGroup]="curedForm" (ngSubmit)="submit()">
+            <mat-form-field>
+                <mat-label>id</mat-label>
+                <input matInput type="text" formControlName="id" name="id">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" formControlName="firstname" name="firstname">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" formControlName="lastname" name="lastname">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email" name="email">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput type="text" formControlName="address" name="address">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Phone.no</mat-label>
+                <input matInput type="text" formControlName="phoneno" name="phoneno">
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </form>
+    </div>
+</div>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone.no</th>
+    </tr>
+    <tr *ngFor="let k of Users;let i=index;">
+        <th>{{k.id}}</th>
+        <th>{{k.firstname}}</th>
+        <th>{{k.lastname}}</th>
+        <th>{{k.email}}</th>
+        <th>{{k.address}}</th>
+        <th>{{k.phoneno}}</th>
+        <button (click)="del(k.id)">Delete</button>
+        <button (click)="update(i,k)">Update</button>
+
+    </tr>
+
+
+
+</table>
+
+
+
