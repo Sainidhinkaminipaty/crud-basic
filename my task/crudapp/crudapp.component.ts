@@ -74,7 +74,22 @@ export class CrudappComponent {
     else 
     {
       this.Users.push(this.curedForm.value);
+      this.sort(this.Users);
+      console.log( this.Users);
+  
     }
+  }
+
+
+  sort(users: any): any {
+    users.sort((a: any,b: any)=> {
+      if(a.id < b.id){
+        return -1;
+      }else {
+        return 0;
+      }
+    });
+    return users;
   }
 
 
